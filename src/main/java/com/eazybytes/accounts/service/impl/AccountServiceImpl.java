@@ -30,6 +30,7 @@ public class AccountServiceImpl implements IAccountService {
      */
     @Override
     public void createAccount(CustomerDto customerDto) {
+        // The new account cannot have same mobil number as another customer's
         Optional<Customer> optionalCustomer = customerRepository.findByMobileNumber(customerDto.getMobileNumber());
         if (optionalCustomer.isPresent()) {
             throw new CustomerAlreadyExistsException("Customer with given mobile number already exists."

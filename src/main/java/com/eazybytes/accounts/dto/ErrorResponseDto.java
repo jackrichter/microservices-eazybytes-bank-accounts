@@ -8,7 +8,6 @@ import java.time.LocalDateTime;
 
 @Data @AllArgsConstructor
 public class ErrorResponseDto {
-    private String statusCode;
 
     private String apiPath;
     private HttpStatus errorCode;

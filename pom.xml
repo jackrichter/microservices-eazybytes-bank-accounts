@@ -78,7 +78,7 @@
 
     <build>
         <plugins>
-            <plugin>        <!-- OBS! Working setup for maven plugin! ATTN. Initilizr 3.4 will configure it differently!  -->
+            <plugin>        <!-- OBS! Working setup for maven plugin! ATTN. Initilizr 3.4 might configure it differently!  -->
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
